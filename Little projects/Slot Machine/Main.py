@@ -26,6 +26,7 @@ def deposit():
 
 def get_number_of_lines():
     while True:
+        # an example of concatination in a string 
         lines = input("Enter the number of lines to bet on (1-" + str(MAX_LINES) + ")? ")
         # checking that what they input is a number
         if lines.isdigit():
@@ -54,6 +55,7 @@ def get_bet():
                 break
             else:
                 # if it is not greater than 0
+                # function print statement example // it is my preferred way to put variables into a string
                 print(f"Amount must be between ${MIN_BET} - ${MAX_BET}")
         else:
             # if it is not a number
