@@ -50,7 +50,7 @@ def get_bet():
             # changing from a string to a number
             amount = int(amount)
             if MIN_BET <= amount <= MAX_BET:
-                # if the amount is greater than 0 it will leave the loop
+                # if the amount is less than or equal to MIN_BET and less than or equal to MAX_BET it will leave the loop
                 break
             else:
                 # if it is not greater than 0
