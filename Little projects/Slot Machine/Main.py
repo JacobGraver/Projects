@@ -1,3 +1,5 @@
+# I am going to be commenting this very heavily as a tool to learn
+
 # collect deposit // create function
 def deposit():
     # while loop
