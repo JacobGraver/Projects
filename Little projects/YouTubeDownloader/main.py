@@ -3,6 +3,11 @@ import pytube
 import tkinter
 import customtkinter
 
+# Download function
+def download():
+    try:
+        ytLink = 
+
 # System settings
 customtkinter.set_appearance_mode("System")
 customtkinter.set_default_color_theme("blue")
@@ -17,7 +22,11 @@ title = customtkinter.CTkLabel(app, text="Insert a YouTube link")
 title.pack(padx=10, pady=10)
 
 # Link input
-link = customtkinter.CTkEntry(app, width=400, height=40) # origionally 350
+url_var = tkinter.StringVar()
+link = customtkinter.CTkEntry(app, width=400, height=40, textvariable=url_var) # origionally 350
 link.pack()
+
+# Download button
+download = customtkinter.CTkButton(app, text="Download", command=download)
 
 app.mainloop()
